@@ -16,6 +16,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileFormatter.LinksService"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FileFormatter.Formatter", "src\FileFormatter.Formatter\FileFormatter.Formatter.csproj", "{558D8771-318A-49ED-9180-176D02A247B5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileFormatter.ResultHandler", "src\FileFormatter.ResultHandler\FileFormatter.ResultHandler.csproj", "{5B7C6CAD-A36E-4C30-940D-2B5806484726}"
+EndProject
+
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
