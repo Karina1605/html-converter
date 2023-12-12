@@ -8,6 +8,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FileFormatter.Common", "src
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FileFormatter.DbIntegrator", "src\FileFormatter.DbIntegrator\FileFormatter.DbIntegrator.csproj", "{3354ABD9-FFD2-4EE8-B63B-5111F9C5A1D7}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FileFormatter.Messaging", "src\FileFormatter.Messaging\FileFormatter.Messaging.csproj", "{D9B5D49D-7696-413D-9E96-D96194DDAC32}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
