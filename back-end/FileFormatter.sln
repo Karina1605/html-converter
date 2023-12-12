@@ -18,7 +18,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FileFormatter.Formatter", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileFormatter.ResultHandler", "src\FileFormatter.ResultHandler\FileFormatter.ResultHandler.csproj", "{5B7C6CAD-A36E-4C30-940D-2B5806484726}"
 EndProject
-
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FileFormatter.HubRunner", "src\FileFormatter.Hub\FileFormatter.HubRunner.csproj", "{48A4C94A-1279-4696-8FF3-569F34A78C45}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
