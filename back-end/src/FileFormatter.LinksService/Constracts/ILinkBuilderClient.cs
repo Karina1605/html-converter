@@ -1,6 +1,6 @@
 ﻿using Refit;
 
-namespace FileFormatter.LinkBuilder.Constracts;
+namespace FileFormatter.LinksService.Constracts;
 
 public interface ILinkBuilderClient 
 {
