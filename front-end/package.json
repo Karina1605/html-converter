@@ -3,6 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@microsoft/signalr": "^8.0.0",
+    "@mui/icons-material": "^5.14.19",
+    "@mui/material": "^5.14.20",
+    "@reduxjs/toolkit": "^2.0.1",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -10,10 +16,16 @@
     "@types/node": "^16.18.68",
     "@types/react": "^18.2.42",
     "@types/react-dom": "^18.2.17",
+    "@types/signalr": "^2.4.3",
+    "inversify": "^6.0.2",
     "react": "^18.2.0",
+    "react-axios": "^2.0.6",
     "react-dom": "^18.2.0",
+    "react-redux": "^9.0.2",
     "react-scripts": "5.0.1",
+    "reflect-metadata": "^0.1.14",
     "typescript": "^4.9.5",
+    "use-file-picker": "^2.1.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -39,5 +51,12 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "css-loader": "^6.8.1",
+    "style-loader": "^3.3.3"
+  },
+  "browser": {
+    "crypto": false
   }
 }

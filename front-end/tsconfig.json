@@ -2,10 +2,14 @@
   "compilerOptions": {
     "target": "es5",
     "lib": [
+      "es6",
       "dom",
       "dom.iterable",
       "esnext"
     ],
+    "types": ["reflect-metadata"],
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
@@ -13,7 +17,7 @@
     "strict": true,
     "forceConsistentCasingInFileNames": true,
     "noFallthroughCasesInSwitch": true,
-    "module": "esnext",
+    "module": "CommonJS",
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
@@ -22,5 +26,10 @@
   },
   "include": [
     "src"
+  ],
+  "exclude": [
+    "node_modules",
+    "bower_components",
+    "wwwroot"
   ]
 }
