@@ -1,9 +1,18 @@
-import React from 'react';
+import React, { useState, useEffect } from "react";
 import logo from './logo.svg';
 import './App.css';
+import { StartWindow } from "./components/StartWindow/StartWindow";
+import { FilesStatusWindow } from "./components/FilesStatusWindow/FilesStatusWindow";
 
 function App() {
-  return (
+  // Builds the SignalR connection, mapping it to /chat
+	
+
+	// Starts the SignalR connection
+
+	return <FilesStatusWindow/>;
+};
+  /*return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
@@ -21,6 +30,6 @@ function App() {
       </header>
     </div>
   );
-}
+}*/
 
 export default App;
