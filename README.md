@@ -54,3 +54,4 @@ All the services can be replicated and distributed by kafka partitions and nginx
 ## Improvements 
 - Writing tests
 - Distribute tasks by file size, it can help to process large files on other nodes and user will receive updtes on small files faster
+- Add retention policy (db query and minio integrator already are already have this functionality). For example, Once a day clear db and storage from finished sessions
