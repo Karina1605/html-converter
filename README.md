@@ -51,5 +51,6 @@ Monitoring window opens hub connection and updates state by server notification
 ## Durability
 All the services can be replicated and distributed by kafka partitions and nginx.
 
-## Improvements
+## Improvements 
 - Writing tests
+- Distribute tasks by file size, it can help to process large files on other nodes and user will receive updtes on small files faster
