@@ -15,13 +15,13 @@ The infrastructure description is presented in svg in this repo.
 - Saves files to minio storage
 - Adds information about session to database.
 - Put to kafka tasks for converting.
-- Returns sessionId to user. Then user connect to hub with this Id.
-In case of restart this service user will proceed getting updates on his files. 
+- Returns sessionId to user. Then user connects to hub with this Id.
+In case of restart this service users will proceed getting updates on their files. 
 
 ### File converting processor
 
-Service is Listening Kafka messages. When the new one arrives:
-- Gets url for html file from LinksService
+Service is listening Kafka messages. When the new one arrives:
+- Service gets url for the html file from LinksService
 - With Puppeteer Sharp open html and converts it to pdf
 - In case of success saves new pdf file with the same name in minio
 - Put to kafka operation results
