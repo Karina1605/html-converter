@@ -5,14 +5,28 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { Provider } from "react-redux";
 import {store} from './state/state-logic';
+import { RouterProvider, createBrowserRouter } from 'react-router-dom';
+import { StartWindow } from './components/StartWindow/StartWindow';
+import { FilesStatusWindow } from './components/FilesStatusWindow/FilesStatusWindow';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <StartWindow/>,
+  },
+  {
+    path:"/status",
+    element: <FilesStatusWindow/>
+  }
+]);
+
 root.render(
   <Provider store={store}>
-    <App />
+     <RouterProvider router={router} />
   </Provider>
 );
 

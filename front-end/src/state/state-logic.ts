@@ -1,10 +1,8 @@
 import { createSlice, configureStore } from '@reduxjs/toolkit'
 import { FileInstance } from '../common/FileInstance'
-import { FileState } from '../common/FileStates'
-import { UUID } from 'crypto'
 
 let filesArray: Array<FileInstance> = []
-let id : UUID|null = null;
+let id : string = '';
 const counterSlice = createSlice({
   name: 'files_monitor',
   initialState: {
@@ -30,6 +28,7 @@ const counterSlice = createSlice({
     },
     sessionIsReadyToOpen:(state, params)=>{
       state.sessionId =params.payload['sessionId']
+      state.files = state.filesToUpload.map(x => new FileInstance(x['name']))
     }
   }
 })

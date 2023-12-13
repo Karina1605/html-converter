@@ -10,25 +10,23 @@ import { container } from '../dependency-configuration';
 @injectable()
 export default class HttpClient implements IHttpClient{
 
-  private readonly url : string;
-  constructor(@inject('url_info') private readonly urlOps: HttpOptions){
-    this.url = urlOps.Url
+  constructor(){
   }
 
-    async sendFiles(files: FileContent<string>[]): Promise<UUID> {
+    async sendFiles(files: FileContent<string>[]): Promise<string> {
         const formData = new FormData();
-        let result = randomUUID()
+        let result: string =""
         files.forEach(file=>{
             formData.append(file.name, file.content);
           });
-          
-          //!!!
-        await axios.post(this.url + "/convert-files", {
+        var url = container.get<HttpOptions>('url_info').Url
+
+        await axios.post(url + "/convert-files", {
             data: formData,
             headers: {
               "Content-Type": "multipart/form-data"
             }
-          }).then(x => result = x.data);
+          }).then(x => result = x.data['clientId']);
         return result
     }
     
