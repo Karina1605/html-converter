@@ -13,10 +13,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\FileFormatter.Common\FileFormatter.Common.csproj" />
-    <ProjectReference Include="..\..\FileFormatter.DbIntegrator\FileFormatter.DbIntegrator.csproj" />
-    <ProjectReference Include="..\..\FileFormatter.Messaging\FileFormatter.Messaging.csproj" />
-    <ProjectReference Include="..\..\FileFormatter.StoreIntegrator\FileFormatter.StoreIntegrator.csproj" />
+    <ProjectReference Include="..\FileFormatter.Common\FileFormatter.Common.csproj" />
+    <ProjectReference Include="..\FileFormatter.DbIntegrator\FileFormatter.DbIntegrator.csproj" />
+    <ProjectReference Include="..\FileFormatter.Messaging\FileFormatter.Messaging.csproj" />
+    <ProjectReference Include="..\FileFormatter.StoreIntegrator\FileFormatter.StoreIntegrator.csproj" />
   </ItemGroup>
 
 </Project>
